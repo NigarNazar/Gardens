@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+.logo img{
+    width: 300px;
+}
+.nav-link{
+    display: flex;
+
+}
+.nav-link a{
+    text-decoration: none;
+    padding-right: 30px;
+    font-weight: 300;
+    color:#000;
+}
+.nav-link a:nth-child(7) img{
+ width: 20px;
+ height: 20px;
+ color: #666;
+ transform: rotate(90deg);
+}
+.nav-link a:nth-child(8) img{
+    width: 20px;
+    height: 18px;
+    color: #000;
+}
+
+
+.left{
+    position: absolute;
+    z-index: 999;
+    top: 10%;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+left: 8%;
+}
+.left h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 44px;
+    letter-spacing: 1px;
+    line-height: 62px;
+    padding-bottom: 20px;
+}
+.left h1 span{
+    color: #e84118;
+}
+.left p{
+    opacity: .8;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.section{
+    width: 100%;
+    height: 70vh;
+    animation:animate 16s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+    }
+@keyframes animate{
+    0%,100%{
+background-image:url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-slider-background-3.jpg) ;
+
+}
+    35%{
+       background-image:url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-slider-background-2.jpg) ; 
+    }
+    65%{
+      background-image:url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-slider-background.jpg) ;  
+    }
+}
+
+.section-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px 30px 80px;
+}
+.navbar-sec{
+    display: flex;
+}
+.navbar-sec a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    padding-left: 20px;
+}
+.navbar-sec a:nth-child(1){
+    color: #e84118;
+}
+.filtre-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.filtre-button{
+    padding: 5px 10px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    position: relative;
+
+}
+
+.filtre-drop{
+    width: 400px;
+    height: 250px;
+    /* box-shadow: 0.5px 0.5px 4px rgba(0,0,0,.8); */
+    position: absolute;
+    z-index: 999;
+    right: 7%;
+    top: 43%;
+    background-color: #fff;
+    display: none;
+    cursor: pointer;
+}
+.drop-down{
+    display: flex;
+    padding: 20px 40px;
+}
+.drop-up{
+    display: flex;
+    flex-direction: column;
+    justify-content:  start;
+    align-items: start;
+}
+.drop-up h5 , .drop-town h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.drop-town{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.drop-down a{
+    text-decoration: none;
+    color: #000;
+    font-weight:300;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+.filtre-sec:hover .filtre-drop{
+    display: block;
+}
+
+.flowers-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+}
+.flowers-garden{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flowers-garden img{
+    width: 295px;
+    height: 380.64px;
+    transform: scale(1);
+    padding-bottom: 20px;
+   
+}
+.flowers-garden img:hover{
+    transform: scale(1.05);
+    transition:0.3s ease-in-out;
+}
+.flowers-garden a{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform:uppercase ;
+}
+
+.flowers-garden button{
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background-color: transparent;
+    margin-bottom:20px ;
+}
+.flowers-garden button:hover{
+    color: #e84118;
+}
